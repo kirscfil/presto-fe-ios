@@ -32,6 +32,10 @@
 		E8B57F8B1F7A926700E93FA2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B57F8A1F7A926700E93FA2 /* TodayViewController.swift */; };
 		E8B57F8E1F7A926700E93FA2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B57F8C1F7A926700E93FA2 /* MainInterface.storyboard */; };
 		E8B57F921F7A926700E93FA2 /* PrestoMenu Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8B57F851F7A926700E93FA2 /* PrestoMenu Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8C3DDF1205BD41A0047B1F8 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3DDF0205BD41A0047B1F8 /* Menu.swift */; };
+		E8C3DDF3205BD4A30047B1F8 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3DDF0205BD41A0047B1F8 /* Menu.swift */; };
+		E8C3DDF4205BD4A30047B1F8 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3DDF0205BD41A0047B1F8 /* Menu.swift */; };
+		E8C3DDF5205BD4A50047B1F8 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C3DDF0205BD41A0047B1F8 /* Menu.swift */; };
 		E8DA3E88205A68CD00E46FD9 /* Voltage.otf in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E87205A68CD00E46FD9 /* Voltage.otf */; };
 		E8DA3E89205A68CD00E46FD9 /* Voltage.otf in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E87205A68CD00E46FD9 /* Voltage.otf */; };
 		E8DA3E8A205A68CD00E46FD9 /* Voltage.otf in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E87205A68CD00E46FD9 /* Voltage.otf */; };
@@ -115,6 +119,7 @@
 		E8B57F8A1F7A926700E93FA2 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		E8B57F8D1F7A926700E93FA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		E8B57F8F1F7A926700E93FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C3DDF0205BD41A0047B1F8 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		E8DA3E87205A68CD00E46FD9 /* Voltage.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Voltage.otf; sourceTree = "<group>"; };
 		E8DA3E8C205A698A00E46FD9 /* Bradley Hand Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bradley Hand Bold.ttf"; sourceTree = "<group>"; };
 		E8DA3E8E205A6CB800E46FD9 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
@@ -213,6 +218,7 @@
 				E8B57F771F7A865900E93FA2 /* Info.plist */,
 				E8B57F7D1F7A867600E93FA2 /* ApiClient.swift */,
 				E8B57F7F1F7A8D3200E93FA2 /* MenuProvider.swift */,
+				E8C3DDF0205BD41A0047B1F8 /* Menu.swift */,
 				E80870381F7BD45D003E520B /* PushManager.swift */,
 				E8EBADD41F83BD53005BAF8B /* SiriManager.swift */,
 			);
@@ -446,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C3DDF4205BD4A30047B1F8 /* Menu.swift in Sources */,
 				E87A63A01F83C85A00787D6D /* IntentHandler.swift in Sources */,
 				E8DA3E92205A6CB800E46FD9 /* MenuItemCell.swift in Sources */,
 			);
@@ -455,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C3DDF3205BD4A30047B1F8 /* Menu.swift in Sources */,
 				E87A63AA1F83C85A00787D6D /* IntentViewController.swift in Sources */,
 				E8DA3E93205A6CB800E46FD9 /* MenuItemCell.swift in Sources */,
 			);
@@ -468,6 +476,7 @@
 				E80870391F7BD45D003E520B /* PushManager.swift in Sources */,
 				E8B57F6E1F7A865900E93FA2 /* ViewController.swift in Sources */,
 				E8B57F801F7A8D3200E93FA2 /* MenuProvider.swift in Sources */,
+				E8C3DDF1205BD41A0047B1F8 /* Menu.swift in Sources */,
 				E8DA3E90205A6CB800E46FD9 /* MenuItemCell.swift in Sources */,
 				E8723EE0205A6FCD001B7BFA /* MenuTitleCell.swift in Sources */,
 				E8B57F6C1F7A865900E93FA2 /* AppDelegate.swift in Sources */,
@@ -480,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C3DDF5205BD4A50047B1F8 /* Menu.swift in Sources */,
 				E80F3CFF1F7A9A0D004C7A58 /* MenuReusableCell.swift in Sources */,
 				E80F3CFD1F7A93DB004C7A58 /* MenuProvider.swift in Sources */,
 				E8B57F8B1F7A926700E93FA2 /* TodayViewController.swift in Sources */,

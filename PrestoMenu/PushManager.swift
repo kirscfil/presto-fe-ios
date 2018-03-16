@@ -77,7 +77,7 @@ class PushManager {
     func scheduleLocalNotificationForNewMenu() {
         let content = UNMutableNotificationContent()
         content.title = "Nové menu v Prestu!"
-        content.body = "Dnes jsou v nabídce "+MenuProvider.instance.soupsString+" a "+MenuProvider.instance.dailiesString
+        //content.body = "Dnes jsou v nabídce "+MenuProvider.instance.soupsString+" a "+MenuProvider.instance.dailiesString
         content.categoryIdentifier = newMenuIdentifier
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 3, repeats: false)

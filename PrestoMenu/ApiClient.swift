@@ -9,7 +9,7 @@
 import Foundation
 
 enum Endpoint: String {
-    case menu = "/menu/today"
+    case menu = "/menu"
     case deviceToken = "/token"
 }
 
@@ -17,33 +17,49 @@ class ApiClient {
     
     static var instance = ApiClient()
     
-    private let baseURL = "http://prestomm.herokuapp.com"
+    private let baseURL = "https://presto-api.vapor.cloud"
     
     func getMenu(completion: (_ success: Bool, _ menu: Menu?) -> ()) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        
         if let data = getJSON(urlToRequest: baseURL + Endpoint.menu.rawValue),
            let json = parseJSON(inputData: data),
-           let array = json["menu"] as? NSArray {
-            let meals = array.flatMap({ (dictionary) -> Food? in
-                if let foodDictionary = dictionary as? [String: Any],
-                   let name = foodDictionary["name"] as? String,
-                   let category = foodDictionary["type"] as? String {
-                    return Food(name: name,
-                                price: foodDictionary["price"] as? Int,
-                                weight: foodDictionary["weight"] as? Int,
-                                category: FoodCategory(rawValue: category) ?? .daily)
-                } else {
-                    return nil
+           let dateString = json["date"] as? String,
+           let date = dateFormatter.date(from: dateString),
+           let categoriesArray = json["categories"] as? NSArray {
+            
+            let categories = categoriesArray.compactMap {
+                dictionary -> MealCategory? in
+                
+                // Parse Categories
+                if let categoryDictionary = dictionary as? [String: Any],
+                   let categoryName = categoryDictionary["name"] as? String,
+                   let category = MealCategoryName(rawValue: categoryName),
+                   let mealsArray = categoryDictionary["meals"] as? NSArray {
+                    
+                    let meals = mealsArray.compactMap {
+                        dictionary -> Meal? in
+                        
+                        // Parse Meals
+                        if let mealDictionary = dictionary as? [String: Any],
+                           let name = mealDictionary["name"] as? String {
+                            return Meal(name: name, weight: mealDictionary["weight"] as? Int, basePrice: mealDictionary["basePrice"] as? Int)
+                        }
+                        return nil
+                        
+                    }
+                    
+                    return MealCategory(name: category, meals: meals)
                 }
-            })
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-            if let dateString = json["date"] as? String,
-                let date = dateFormatter.date(from: dateString) {
-                let menu = Menu(meals: meals, date: date)
-                completion(true, menu)
-            } else {
-                completion(false, nil)
+                return nil
+                
             }
+            
+            completion(true, Menu(date: date, categories: categories))
+            
+        } else {
+            completion(false, nil)
         }
     }
     

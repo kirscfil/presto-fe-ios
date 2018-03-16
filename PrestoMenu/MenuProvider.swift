@@ -8,74 +8,15 @@
 
 import Foundation
 
-enum FoodCategory: String {
-    case daily = "daily"
-    case soup = "soup"
-    case burger = "burger"
-    case salad = "salad"
-    case special = "special"
-    case steak = "steak"
-    case vegetarian = "vegetarian"
-    
-    var isWeekly: Bool {
-        get {
-            return self != .daily && self != .soup
-        }
-    }
-}
-
-struct Food {
-    let name: String
-    let price: Int?
-    let weight: Int?
-    let category: FoodCategory
-    
-    var typedName: String {
-        get {
-            switch category {
-            case .burger:
-                return "Burger: "+name
-            case .steak:
-                return "Steak: "+name
-            case .salad:
-                return "Salát: "+name
-            case .special:
-                return "Specialita: "+name
-            case .vegetarian:
-                return "Žádné maso: "+name
-            default:
-                return name
-            }
-        }
-    }
-}
-
-struct Menu {
-    
-    let meals: [Food]
-    let date: Date?
-    
-}
-
 class MenuProvider {
     
     static let instance = MenuProvider()
     
     private(set) var menu: Menu?
-    var soups: [Food]? {
-        get {
-            return menu?.meals.filter({ (food) -> Bool in
-                food.category == .soup
-            })
-        }
-    }
-    var dailies: [Food]? {
-        get {
-            return menu?.meals.filter({ (food) -> Bool in
-                food.category == .daily
-            })
-        }
-    }
+    
+    
+
+    /*
     var soupsString: String {
         get {
             let count = self.soups?.count ?? 0
@@ -88,6 +29,7 @@ class MenuProvider {
             return count == 1 ? "hlavní jídlo" : (String(describing: count) + " hlavní jídla")
         }
     }
+    */
     
     init(){
         fetchMenu(callback: nil)

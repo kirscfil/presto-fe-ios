@@ -39,63 +39,29 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return (self.menu?.categories.count ?? 0) + 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0:
-            return 1
-        case 1:
-            return MenuProvider.instance.soups?.count ?? 0
-        case 2:
-            return MenuProvider.instance.dailies?.count ?? 0
-        case 3:
-            return menu?.meals.filter({ $0.category.isWeekly }).count ?? 0
-        default:
-            return 0
-        }
         if section == 0 {
             return 1
         } else {
-            guard let menu = menu else {
-                return 0
-            }
-            return section == 0 ? 1 : menu.meals.count
+            return menu?.categories[section-1].meals.count ?? 0
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.section {
-        case 0:
+        if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: MenuTitleCell.reuseIdentifier, for: indexPath) as! MenuTitleCell
             if let date = self.menu?.date {
                 cell.dateLabel.text = "\(date)"
             }
             return cell
-        case 1:
+        } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: MenuItemCell.reuseIdentifier, for: indexPath) as! MenuItemCell
-            if let food = MenuProvider.instance.soups?[indexPath.row] {
+            if let food = self.menu?.categories[indexPath.section - 1].meals[indexPath.row] {
                 cell.nameLabel.text = food.name
-                if let price = food.price {
-                    cell.priceLabel.text = String(price) + " CZK"
-                }
-            }
-            return cell
-        case 2:
-            let cell = tableView.dequeueReusableCell(withIdentifier: MenuItemCell.reuseIdentifier, for: indexPath) as! MenuItemCell
-            if let food = MenuProvider.instance.dailies?[indexPath.row] {
-                cell.nameLabel.text = food.name
-                if let price = food.price {
-                    cell.priceLabel.text = String(price) + " CZK"
-                }
-            }
-            return cell
-        default:
-            let cell = tableView.dequeueReusableCell(withIdentifier: MenuItemCell.reuseIdentifier, for: indexPath) as! MenuItemCell
-            if let food = menu?.meals.filter({ $0.category.isWeekly })[indexPath.row] {
-                cell.nameLabel.text = food.name
-                if let price = food.price {
+                if let price = food.basePrice {
                     cell.priceLabel.text = String(price) + " CZK"
                 }
             }

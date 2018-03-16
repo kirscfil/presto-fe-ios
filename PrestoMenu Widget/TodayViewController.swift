@@ -79,6 +79,18 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     }
 }
 
+extension Menu {
+    
+    var meals: [Meal] {
+        get {
+            return categories.flatMap({ (category) in
+                return category.meals
+            })
+        }
+    }
+    
+}
+
 extension TodayViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -95,8 +107,8 @@ extension TodayViewController: UICollectionViewDataSource, UICollectionViewDeleg
         } else {
             let view = collectionView.dequeueReusableCell(withReuseIdentifier: "menuCell", for: indexPath) as! MenuReusableCell
             let food = menu!.meals[indexPath.row]
-            view.nameLabel?.text = food.typedName
-            view.priceLabel?.text = food.price == nil ? nil : String(describing: food.price!) + " Kč"
+            view.nameLabel?.text = food.name
+            view.priceLabel?.text = food.basePrice == nil ? nil : String(describing: food.basePrice!) + " Kč"
             view.weightLabel?.text = food.weight == nil ? nil : String(describing: food.weight!) + "g  "
             return view
         }
