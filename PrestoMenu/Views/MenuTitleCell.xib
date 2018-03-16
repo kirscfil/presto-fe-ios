@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Voltage.otf">
+            <string>Voltage</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="122" id="SN8-nM-dSH" customClass="MenuTitleCell" customModule="PrestoMenu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SN8-nM-dSH" id="aws-0x-o2r">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="121.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dnes v Prestu:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uw9-H3-eIC">
+                        <rect key="frame" x="89" y="56" width="197.5" height="21"/>
+                        <fontDescription key="fontDescription" name="Voltage" family="Voltage" pointSize="35"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Načítám aktuální data..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cf3-75-vhz">
+                        <rect key="frame" x="107" y="16" width="161" height="21"/>
+                        <fontDescription key="fontDescription" name="Voltage" family="Voltage" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uw9-H3-eIC" firstAttribute="top" secondItem="cf3-75-vhz" secondAttribute="bottom" id="0LB-cp-a6V"/>
+                    <constraint firstItem="cf3-75-vhz" firstAttribute="centerX" secondItem="aws-0x-o2r" secondAttribute="centerX" id="CpC-oe-qoy"/>
+                    <constraint firstItem="uw9-H3-eIC" firstAttribute="centerX" secondItem="aws-0x-o2r" secondAttribute="centerX" id="dcR-E6-WbE"/>
+                    <constraint firstItem="cf3-75-vhz" firstAttribute="top" secondItem="aws-0x-o2r" secondAttribute="top" constant="16" id="otg-sK-Vba"/>
+                    <constraint firstAttribute="bottom" secondItem="uw9-H3-eIC" secondAttribute="bottom" constant="11.5" id="pJ9-Dc-jMj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dateLabel" destination="cf3-75-vhz" id="YjI-WH-Od8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

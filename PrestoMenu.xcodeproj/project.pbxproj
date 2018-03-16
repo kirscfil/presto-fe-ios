@@ -7,14 +7,100 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E80870391F7BD45D003E520B /* PushManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80870381F7BD45D003E520B /* PushManager.swift */; };
+		E80F3CFC1F7A93DB004C7A58 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B57F7D1F7A867600E93FA2 /* ApiClient.swift */; };
+		E80F3CFD1F7A93DB004C7A58 /* MenuProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B57F7F1F7A8D3200E93FA2 /* MenuProvider.swift */; };
+		E80F3CFF1F7A9A0D004C7A58 /* MenuReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80F3CFE1F7A9A0D004C7A58 /* MenuReusableCell.swift */; };
+		E80F3D011F7AA47B004C7A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B57F721F7A865900E93FA2 /* Assets.xcassets */; };
+		E8723EE0205A6FCD001B7BFA /* MenuTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8723EDF205A6FCD001B7BFA /* MenuTitleCell.swift */; };
+		E8723EE2205A7891001B7BFA /* MenuTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8723EE1205A7891001B7BFA /* MenuTitleCell.xib */; };
+		E8723F02205A906D001B7BFA /* MealCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8723F01205A906D001B7BFA /* MealCategoryView.swift */; };
+		E87A63A01F83C85A00787D6D /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87A639F1F83C85A00787D6D /* IntentHandler.swift */; };
+		E87A63A71F83C85A00787D6D /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8EBADA01F83BB65005BAF8B /* IntentsUI.framework */; };
+		E87A63AA1F83C85A00787D6D /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87A63A91F83C85A00787D6D /* IntentViewController.swift */; };
+		E87A63AD1F83C85A00787D6D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E87A63AB1F83C85A00787D6D /* MainInterface.storyboard */; };
+		E87A63B11F83C85A00787D6D /* PrestoUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E87A63A61F83C85A00787D6D /* PrestoUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E87A63B41F83C85A00787D6D /* Presto.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E87A639D1F83C85A00787D6D /* Presto.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E8B57F6C1F7A865900E93FA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B57F6B1F7A865900E93FA2 /* AppDelegate.swift */; };
 		E8B57F6E1F7A865900E93FA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B57F6D1F7A865900E93FA2 /* ViewController.swift */; };
 		E8B57F711F7A865900E93FA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B57F6F1F7A865900E93FA2 /* Main.storyboard */; };
 		E8B57F731F7A865900E93FA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B57F721F7A865900E93FA2 /* Assets.xcassets */; };
 		E8B57F761F7A865900E93FA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B57F741F7A865900E93FA2 /* LaunchScreen.storyboard */; };
+		E8B57F7E1F7A867600E93FA2 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B57F7D1F7A867600E93FA2 /* ApiClient.swift */; };
+		E8B57F801F7A8D3200E93FA2 /* MenuProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B57F7F1F7A8D3200E93FA2 /* MenuProvider.swift */; };
+		E8B57F881F7A926700E93FA2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B57F871F7A926700E93FA2 /* NotificationCenter.framework */; };
+		E8B57F8B1F7A926700E93FA2 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B57F8A1F7A926700E93FA2 /* TodayViewController.swift */; };
+		E8B57F8E1F7A926700E93FA2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B57F8C1F7A926700E93FA2 /* MainInterface.storyboard */; };
+		E8B57F921F7A926700E93FA2 /* PrestoMenu Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8B57F851F7A926700E93FA2 /* PrestoMenu Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8DA3E88205A68CD00E46FD9 /* Voltage.otf in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E87205A68CD00E46FD9 /* Voltage.otf */; };
+		E8DA3E89205A68CD00E46FD9 /* Voltage.otf in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E87205A68CD00E46FD9 /* Voltage.otf */; };
+		E8DA3E8A205A68CD00E46FD9 /* Voltage.otf in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E87205A68CD00E46FD9 /* Voltage.otf */; };
+		E8DA3E8B205A68CD00E46FD9 /* Voltage.otf in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E87205A68CD00E46FD9 /* Voltage.otf */; };
+		E8DA3E90205A6CB800E46FD9 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA3E8E205A6CB800E46FD9 /* MenuItemCell.swift */; };
+		E8DA3E91205A6CB800E46FD9 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA3E8E205A6CB800E46FD9 /* MenuItemCell.swift */; };
+		E8DA3E92205A6CB800E46FD9 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA3E8E205A6CB800E46FD9 /* MenuItemCell.swift */; };
+		E8DA3E93205A6CB800E46FD9 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA3E8E205A6CB800E46FD9 /* MenuItemCell.swift */; };
+		E8DA3E94205A6CB800E46FD9 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E8F205A6CB800E46FD9 /* MenuItemCell.xib */; };
+		E8DA3E95205A6CB800E46FD9 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E8F205A6CB800E46FD9 /* MenuItemCell.xib */; };
+		E8DA3E96205A6CB800E46FD9 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E8F205A6CB800E46FD9 /* MenuItemCell.xib */; };
+		E8DA3E97205A6CB800E46FD9 /* MenuItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8DA3E8F205A6CB800E46FD9 /* MenuItemCell.xib */; };
+		E8EBADD51F83BD53005BAF8B /* SiriManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EBADD41F83BD53005BAF8B /* SiriManager.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E87A63AF1F83C85A00787D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B57F601F7A865900E93FA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E87A63A51F83C85A00787D6D;
+			remoteInfo = PrestoUI;
+		};
+		E87A63B21F83C85A00787D6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B57F601F7A865900E93FA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E87A639C1F83C85A00787D6D;
+			remoteInfo = Presto;
+		};
+		E8B57F901F7A926700E93FA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B57F601F7A865900E93FA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B57F841F7A926700E93FA2;
+			remoteInfo = "PrestoMenu Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8B57F961F7A926700E93FA2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8B57F921F7A926700E93FA2 /* PrestoMenu Widget.appex in Embed App Extensions */,
+				E87A63B11F83C85A00787D6D /* PrestoUI.appex in Embed App Extensions */,
+				E87A63B41F83C85A00787D6D /* Presto.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E80870371F7BD400003E520B /* PrestoMenu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrestoMenu.entitlements; sourceTree = "<group>"; };
+		E80870381F7BD45D003E520B /* PushManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushManager.swift; sourceTree = "<group>"; };
+		E80F3CFE1F7A9A0D004C7A58 /* MenuReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuReusableCell.swift; sourceTree = "<group>"; };
+		E8723EDF205A6FCD001B7BFA /* MenuTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTitleCell.swift; sourceTree = "<group>"; };
+		E8723EE1205A7891001B7BFA /* MenuTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTitleCell.xib; sourceTree = "<group>"; };
+		E8723F01205A906D001B7BFA /* MealCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCategoryView.swift; sourceTree = "<group>"; };
+		E87A639D1F83C85A00787D6D /* Presto.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Presto.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E87A639F1F83C85A00787D6D /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		E87A63A11F83C85A00787D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E87A63A61F83C85A00787D6D /* PrestoUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrestoUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E87A63A91F83C85A00787D6D /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		E87A63AC1F83C85A00787D6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E87A63AE1F83C85A00787D6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B57F681F7A865900E93FA2 /* PrestoMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrestoMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B57F6B1F7A865900E93FA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8B57F6D1F7A865900E93FA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,9 +108,37 @@
 		E8B57F721F7A865900E93FA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8B57F751F7A865900E93FA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8B57F771F7A865900E93FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B57F7D1F7A867600E93FA2 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		E8B57F7F1F7A8D3200E93FA2 /* MenuProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProvider.swift; sourceTree = "<group>"; };
+		E8B57F851F7A926700E93FA2 /* PrestoMenu Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PrestoMenu Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B57F871F7A926700E93FA2 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		E8B57F8A1F7A926700E93FA2 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		E8B57F8D1F7A926700E93FA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E8B57F8F1F7A926700E93FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8DA3E87205A68CD00E46FD9 /* Voltage.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Voltage.otf; sourceTree = "<group>"; };
+		E8DA3E8C205A698A00E46FD9 /* Bradley Hand Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bradley Hand Bold.ttf"; sourceTree = "<group>"; };
+		E8DA3E8E205A6CB800E46FD9 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
+		E8DA3E8F205A6CB800E46FD9 /* MenuItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuItemCell.xib; sourceTree = "<group>"; };
+		E8EBADA01F83BB65005BAF8B /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		E8EBADD41F83BD53005BAF8B /* SiriManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiriManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E87A639A1F83C85A00787D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E87A63A31F83C85A00787D6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87A63A71F83C85A00787D6D /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8B57F651F7A865900E93FA2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,13 +146,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E8B57F821F7A926700E93FA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B57F881F7A926700E93FA2 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E87A639E1F83C85A00787D6D /* Presto */ = {
+			isa = PBXGroup;
+			children = (
+				E87A639F1F83C85A00787D6D /* IntentHandler.swift */,
+				E87A63A11F83C85A00787D6D /* Info.plist */,
+			);
+			path = Presto;
+			sourceTree = "<group>";
+		};
+		E87A63A81F83C85A00787D6D /* PrestoUI */ = {
+			isa = PBXGroup;
+			children = (
+				E87A63A91F83C85A00787D6D /* IntentViewController.swift */,
+				E87A63AB1F83C85A00787D6D /* MainInterface.storyboard */,
+				E87A63AE1F83C85A00787D6D /* Info.plist */,
+			);
+			path = PrestoUI;
+			sourceTree = "<group>";
+		};
 		E8B57F5F1F7A865900E93FA2 = {
 			isa = PBXGroup;
 			children = (
+				E8DA3E86205A687A00E46FD9 /* Resources */,
 				E8B57F6A1F7A865900E93FA2 /* PrestoMenu */,
+				E8B57F891F7A926700E93FA2 /* PrestoMenu Widget */,
+				E87A639E1F83C85A00787D6D /* Presto */,
+				E87A63A81F83C85A00787D6D /* PrestoUI */,
+				E8B57F861F7A926700E93FA2 /* Frameworks */,
 				E8B57F691F7A865900E93FA2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				E8B57F681F7A865900E93FA2 /* PrestoMenu.app */,
+				E8B57F851F7A926700E93FA2 /* PrestoMenu Widget.appex */,
+				E87A639D1F83C85A00787D6D /* Presto.appex */,
+				E87A63A61F83C85A00787D6D /* PrestoUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,19 +203,100 @@
 		E8B57F6A1F7A865900E93FA2 /* PrestoMenu */ = {
 			isa = PBXGroup;
 			children = (
+				E8DA3E8D205A6C9D00E46FD9 /* Views */,
+				E80870371F7BD400003E520B /* PrestoMenu.entitlements */,
 				E8B57F6B1F7A865900E93FA2 /* AppDelegate.swift */,
 				E8B57F6D1F7A865900E93FA2 /* ViewController.swift */,
 				E8B57F6F1F7A865900E93FA2 /* Main.storyboard */,
 				E8B57F721F7A865900E93FA2 /* Assets.xcassets */,
 				E8B57F741F7A865900E93FA2 /* LaunchScreen.storyboard */,
 				E8B57F771F7A865900E93FA2 /* Info.plist */,
+				E8B57F7D1F7A867600E93FA2 /* ApiClient.swift */,
+				E8B57F7F1F7A8D3200E93FA2 /* MenuProvider.swift */,
+				E80870381F7BD45D003E520B /* PushManager.swift */,
+				E8EBADD41F83BD53005BAF8B /* SiriManager.swift */,
 			);
 			path = PrestoMenu;
+			sourceTree = "<group>";
+		};
+		E8B57F861F7A926700E93FA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8B57F871F7A926700E93FA2 /* NotificationCenter.framework */,
+				E8EBADA01F83BB65005BAF8B /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8B57F891F7A926700E93FA2 /* PrestoMenu Widget */ = {
+			isa = PBXGroup;
+			children = (
+				E8B57F8A1F7A926700E93FA2 /* TodayViewController.swift */,
+				E8B57F8C1F7A926700E93FA2 /* MainInterface.storyboard */,
+				E8B57F8F1F7A926700E93FA2 /* Info.plist */,
+				E80F3CFE1F7A9A0D004C7A58 /* MenuReusableCell.swift */,
+			);
+			path = "PrestoMenu Widget";
+			sourceTree = "<group>";
+		};
+		E8DA3E86205A687A00E46FD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA3E87205A68CD00E46FD9 /* Voltage.otf */,
+				E8DA3E8C205A698A00E46FD9 /* Bradley Hand Bold.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E8DA3E8D205A6C9D00E46FD9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8DA3E8E205A6CB800E46FD9 /* MenuItemCell.swift */,
+				E8DA3E8F205A6CB800E46FD9 /* MenuItemCell.xib */,
+				E8723EDF205A6FCD001B7BFA /* MenuTitleCell.swift */,
+				E8723EE1205A7891001B7BFA /* MenuTitleCell.xib */,
+				E8723F01205A906D001B7BFA /* MealCategoryView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E87A639C1F83C85A00787D6D /* Presto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E87A63B81F83C85A00787D6D /* Build configuration list for PBXNativeTarget "Presto" */;
+			buildPhases = (
+				E87A63991F83C85A00787D6D /* Sources */,
+				E87A639A1F83C85A00787D6D /* Frameworks */,
+				E87A639B1F83C85A00787D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Presto;
+			productName = Presto;
+			productReference = E87A639D1F83C85A00787D6D /* Presto.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E87A63A51F83C85A00787D6D /* PrestoUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E87A63B51F83C85A00787D6D /* Build configuration list for PBXNativeTarget "PrestoUI" */;
+			buildPhases = (
+				E87A63A21F83C85A00787D6D /* Sources */,
+				E87A63A31F83C85A00787D6D /* Frameworks */,
+				E87A63A41F83C85A00787D6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrestoUI;
+			productName = PrestoUI;
+			productReference = E87A63A61F83C85A00787D6D /* PrestoUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E8B57F671F7A865900E93FA2 /* PrestoMenu */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8B57F7A1F7A865900E93FA2 /* Build configuration list for PBXNativeTarget "PrestoMenu" */;
@@ -74,15 +304,36 @@
 				E8B57F641F7A865900E93FA2 /* Sources */,
 				E8B57F651F7A865900E93FA2 /* Frameworks */,
 				E8B57F661F7A865900E93FA2 /* Resources */,
+				E8B57F961F7A926700E93FA2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E8B57F911F7A926700E93FA2 /* PBXTargetDependency */,
+				E87A63B01F83C85A00787D6D /* PBXTargetDependency */,
+				E87A63B31F83C85A00787D6D /* PBXTargetDependency */,
 			);
 			name = PrestoMenu;
 			productName = PrestoMenu;
 			productReference = E8B57F681F7A865900E93FA2 /* PrestoMenu.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E8B57F841F7A926700E93FA2 /* PrestoMenu Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B57F931F7A926700E93FA2 /* Build configuration list for PBXNativeTarget "PrestoMenu Widget" */;
+			buildPhases = (
+				E8B57F811F7A926700E93FA2 /* Sources */,
+				E8B57F821F7A926700E93FA2 /* Frameworks */,
+				E8B57F831F7A926700E93FA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PrestoMenu Widget";
+			productName = "PrestoMenu Widget";
+			productReference = E8B57F851F7A926700E93FA2 /* PrestoMenu Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,11 +341,34 @@
 		E8B57F601F7A865900E93FA2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Applifting;
 				TargetAttributes = {
+					E87A639C1F83C85A00787D6D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					E87A63A51F83C85A00787D6D = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					E8B57F671F7A865900E93FA2 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					E8B57F841F7A926700E93FA2 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,36 +388,135 @@
 			projectRoot = "";
 			targets = (
 				E8B57F671F7A865900E93FA2 /* PrestoMenu */,
+				E8B57F841F7A926700E93FA2 /* PrestoMenu Widget */,
+				E87A639C1F83C85A00787D6D /* Presto */,
+				E87A63A51F83C85A00787D6D /* PrestoUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E87A639B1F83C85A00787D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DA3E8A205A68CD00E46FD9 /* Voltage.otf in Resources */,
+				E8DA3E96205A6CB800E46FD9 /* MenuItemCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E87A63A41F83C85A00787D6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8DA3E8B205A68CD00E46FD9 /* Voltage.otf in Resources */,
+				E8DA3E97205A6CB800E46FD9 /* MenuItemCell.xib in Resources */,
+				E87A63AD1F83C85A00787D6D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8B57F661F7A865900E93FA2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8DA3E88205A68CD00E46FD9 /* Voltage.otf in Resources */,
+				E8DA3E94205A6CB800E46FD9 /* MenuItemCell.xib in Resources */,
 				E8B57F761F7A865900E93FA2 /* LaunchScreen.storyboard in Resources */,
 				E8B57F731F7A865900E93FA2 /* Assets.xcassets in Resources */,
 				E8B57F711F7A865900E93FA2 /* Main.storyboard in Resources */,
+				E8723EE2205A7891001B7BFA /* MenuTitleCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B57F831F7A926700E93FA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80F3D011F7AA47B004C7A58 /* Assets.xcassets in Resources */,
+				E8DA3E95205A6CB800E46FD9 /* MenuItemCell.xib in Resources */,
+				E8B57F8E1F7A926700E93FA2 /* MainInterface.storyboard in Resources */,
+				E8DA3E89205A68CD00E46FD9 /* Voltage.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E87A63991F83C85A00787D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87A63A01F83C85A00787D6D /* IntentHandler.swift in Sources */,
+				E8DA3E92205A6CB800E46FD9 /* MenuItemCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E87A63A21F83C85A00787D6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87A63AA1F83C85A00787D6D /* IntentViewController.swift in Sources */,
+				E8DA3E93205A6CB800E46FD9 /* MenuItemCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E8B57F641F7A865900E93FA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8EBADD51F83BD53005BAF8B /* SiriManager.swift in Sources */,
+				E80870391F7BD45D003E520B /* PushManager.swift in Sources */,
 				E8B57F6E1F7A865900E93FA2 /* ViewController.swift in Sources */,
+				E8B57F801F7A8D3200E93FA2 /* MenuProvider.swift in Sources */,
+				E8DA3E90205A6CB800E46FD9 /* MenuItemCell.swift in Sources */,
+				E8723EE0205A6FCD001B7BFA /* MenuTitleCell.swift in Sources */,
 				E8B57F6C1F7A865900E93FA2 /* AppDelegate.swift in Sources */,
+				E8B57F7E1F7A867600E93FA2 /* ApiClient.swift in Sources */,
+				E8723F02205A906D001B7BFA /* MealCategoryView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B57F811F7A926700E93FA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80F3CFF1F7A9A0D004C7A58 /* MenuReusableCell.swift in Sources */,
+				E80F3CFD1F7A93DB004C7A58 /* MenuProvider.swift in Sources */,
+				E8B57F8B1F7A926700E93FA2 /* TodayViewController.swift in Sources */,
+				E8DA3E91205A6CB800E46FD9 /* MenuItemCell.swift in Sources */,
+				E80F3CFC1F7A93DB004C7A58 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E87A63B01F83C85A00787D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E87A63A51F83C85A00787D6D /* PrestoUI */;
+			targetProxy = E87A63AF1F83C85A00787D6D /* PBXContainerItemProxy */;
+		};
+		E87A63B31F83C85A00787D6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E87A639C1F83C85A00787D6D /* Presto */;
+			targetProxy = E87A63B21F83C85A00787D6D /* PBXContainerItemProxy */;
+		};
+		E8B57F911F7A926700E93FA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B57F841F7A926700E93FA2 /* PrestoMenu Widget */;
+			targetProxy = E8B57F901F7A926700E93FA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		E87A63AB1F83C85A00787D6D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E87A63AC1F83C85A00787D6D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		E8B57F6F1F7A865900E93FA2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -160,9 +533,81 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		E8B57F8C1F7A926700E93FA2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B57F8D1F7A926700E93FA2 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E87A63B61F83C85A00787D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2Q27ZEA7C;
+				INFOPLIST_FILE = PrestoUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.Applifting.PrestoMenu.PrestoUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E87A63B71F83C85A00787D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2Q27ZEA7C;
+				INFOPLIST_FILE = PrestoUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.Applifting.PrestoMenu.PrestoUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E87A63B91F83C85A00787D6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2Q27ZEA7C;
+				INFOPLIST_FILE = Presto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.Applifting.PrestoMenu.Presto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E87A63BA1F83C85A00787D6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2Q27ZEA7C;
+				INFOPLIST_FILE = Presto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cz.Applifting.PrestoMenu.Presto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E8B57F781F7A865900E93FA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -273,10 +718,13 @@
 		E8B57F7B1F7A865900E93FA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PrestoMenu/PrestoMenu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2Q27ZEA7C;
 				INFOPLIST_FILE = PrestoMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.Applifting.PrestoMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,10 +736,13 @@
 		E8B57F7C1F7A865900E93FA2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PrestoMenu/PrestoMenu.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E2Q27ZEA7C;
 				INFOPLIST_FILE = PrestoMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cz.Applifting.PrestoMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,9 +751,57 @@
 			};
 			name = Release;
 		};
+		E8B57F941F7A926700E93FA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2Q27ZEA7C;
+				INFOPLIST_FILE = "PrestoMenu Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Applifting.PrestoMenu.PrestoMenu-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8B57F951F7A926700E93FA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E2Q27ZEA7C;
+				INFOPLIST_FILE = "PrestoMenu Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cz.Applifting.PrestoMenu.PrestoMenu-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E87A63B51F83C85A00787D6D /* Build configuration list for PBXNativeTarget "PrestoUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E87A63B61F83C85A00787D6D /* Debug */,
+				E87A63B71F83C85A00787D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E87A63B81F83C85A00787D6D /* Build configuration list for PBXNativeTarget "Presto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E87A63B91F83C85A00787D6D /* Debug */,
+				E87A63BA1F83C85A00787D6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E8B57F631F7A865900E93FA2 /* Build configuration list for PBXProject "PrestoMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -317,6 +816,15 @@
 			buildConfigurations = (
 				E8B57F7B1F7A865900E93FA2 /* Debug */,
 				E8B57F7C1F7A865900E93FA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B57F931F7A926700E93FA2 /* Build configuration list for PBXNativeTarget "PrestoMenu Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B57F941F7A926700E93FA2 /* Debug */,
+				E8B57F951F7A926700E93FA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
